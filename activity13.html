@@ -1,14 +1,88 @@
- <div class="parallax-container">
-      <div class="parallax"><img src="clouds02.webp"></div>
-    </div>
-    <div class="section white">
-      <div class="row container">
-        <h2 class="header">Parallax</h2>
-        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-      </div>
-    </div>
-    <div class="parallax-container">
-      <div class="parallax"><img src="clouds02.webp"></div>
-    </div>
-      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="">
+    <title>Parallax and Modal</title>
+</head>
 
+<body>
+    <nav>
+    <div class="parallax-container">
+        <div class="parallax">
+            <a href="" class="brand-logo">Materialize</a>
+            <h2 class="grey-text text-darken-3"></h2>
+        </div>
+    </div>
+    </nav>
+    <section>
+        <div class="row">
+            <div class="col s12 m6">
+             <div class="container">
+                <h2 class="red-text text-lighten-2">Parallax</h2>
+                <p>Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling. Check out the demo to get a better idea of it.
+                </p>
+                <h3 class="grey-text text-darken-3">Parallax Demo HTML</h3>
+             </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <div class="container">
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+    <div class="col s12 m6"></div>
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class .modal-close to your button.</p>
+    </div>
+    <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    <br>
+    <!-- Modal Structure -->
+       <div class="modal-content">
+         <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="clouds02.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 offset-m2">
+                <h1>Clouds</h1>
+                <p>Clounds!Clouds!Clounds!Clouds!Clounds!Clouds!</p>
+            </div>
+         </div>
+       </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+    <div class="style height: 1000px"></div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+            // pag ready na yung document may function na mangyayare
+            $(".dropdown-trigger").dropdown();
+            //drop down
+            $('.parallax').parallax();
+            $('.sidenav').sidenav({
+
+        });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Don't click me</title>
+                    <!-- Compiled and minified CSS -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+                </head>
+                
+                <body>
+                <!-- My dogs -->
+                
+                <div class="container">
+                    <!-- applicable tong container -->
+                    <div class="row">
+                    <!-- magkakasama sa iisang row tong nasa loob -->
+                        <div class="col s12 m6 l4">
+                        <!-- yung number nagdedetermine nang kung ilan yung sakop, pag 12 buo -->
+                            <h4 class="grey-text text-darken-2 center">Cloud 1</h4>
+                            <img src="clouds03.jpg" alt="" class="materialboxed responsive-img" data-caption="arf">
+                        </div>
+                
+                        <div class="col s12 m6 l4">
+                            <h4 class="grey-text text-darken-2 center">Cloud 2</h4>
+                            <img src="clouds01.webp" alt="" class="materialboxed responsive-img" data-caption="arf arf">
+                        </div>
+                
+                        <div class="col s12 m6 l4 hide-on-medium-only">
+                            <h4 class="grey-text text-darken-2 center">Cloud 3</h4>
+                            <img src="clouds02.webp" alt="" class="materialboxed responsive-img" data-caption="arf arf arf">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <div class="slider">
+                                <ul class="slides">
+                                <li>
+                                    <img src="clouds01.webp""
+                                    <h2>hello</h2>
+                                </li>
+                                <li>
+                                    <img src="clouds02.webp" alt=""
+                                    <h2>hello</h2>
+                                </li>
+                                <li>
+                                    <img src="clouds03.jpg" alt=""
+                                    <h2>hello</h2>
+                                </li>
+                                </ul>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+                
+                        <!-- Compiled and minified JavaScript -->
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                
+                        <script>
+                            $(document).ready(function(){
+                            // pag ready na yung document may function na mangyayare
+                                $('.materialboxed').materialbox({
+                                // sinelect yung mga class na materialboxed tas gagawing materialbox na function
+                                    inDuration: 10000,
+                                    outDuration: 100
+                                    // mas mataas mas mabagal, per ms kasi
+                                    // option sa https://materializecss.com/media.html
+                                });
+                                $('.slider').slider({
+                                })
+                            });
+                
+                        </script>
+                
+                </body>
+                </html>
